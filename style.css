@@ -133,6 +133,11 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (max-width:400px){
+  .logo{
+    font-size: 40px;
+  }
+}
 
 @media all and (min-width:480px){
   /* ---------- Navigation ---------*/
@@ -161,13 +166,15 @@ footer p {
   form{
     display:flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   form div{
+    font-size: 12px;
     flex-direction: column;
+    max-width: 15%;
   }
-  form button{
-    width: auto;
+  form div button{
+    font-size:12px;
   }
 
 /* -----  Groups & Items ----- */
@@ -181,8 +188,9 @@ footer p {
   }
 }
 
-@media all and (max-width:380px){
-  .logo{
-    font-size: 52px;
+@media all and (min-width: 800px){
+  /*---form---*/
+  form div, form div button{
+    font-size: 15px;
   }
 }
