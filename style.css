@@ -132,18 +132,24 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width:600px){
+@media all and (min-width:480px){
   /* ---------- Navigation ---------*/
   header{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    padding-top: 0;
   }
   
   .logo{
     font-size: 40px;
     padding-top: 5px;
   }
+
+  header nav ul{
+    padding: 0;
+  }
+
   header nav ul li a:hover {
     color: #bdbdbd;
     text-decoration: none;
