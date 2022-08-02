@@ -164,7 +164,7 @@ footer p {
 
 /* -----  Groups & Items ----- */
   .group{
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
   }
 }
