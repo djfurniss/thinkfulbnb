@@ -95,10 +95,11 @@ form {
   border: 2px solid #ff385c;
   padding: 20px;
 }
+
 form div{
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  width: 100%;
 }
 
 form label {
@@ -106,9 +107,9 @@ form label {
 }
 
 form select,
-form input {
+form input{
   margin-bottom: 20px;
-  width: auto;
+  max-width: 100%;
 }
 
 form button {
@@ -134,8 +135,14 @@ footer p {
 
 /* -------  Media Query ------- */
 @media all and (max-width:400px){
+  h2{
+    font-size: 16px;
+  }
   .logo{
-    font-size: 40px;
+    font-size: 50px;
+  }
+  form{
+    font-size: 12px;
   }
 }
 
